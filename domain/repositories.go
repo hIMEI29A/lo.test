@@ -4,7 +4,7 @@ import (
 	"lo.test/domain/model"
 )
 
-// TaskRepository - общие интерфейч хранилища
+// TaskRepository - общий интерфейс хранилища
 type TaskRepository interface {
 	GetAll(status string) ([]*model.Task, error)
 	GetById(id int) (*model.Task, error)
